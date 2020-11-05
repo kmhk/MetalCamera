@@ -13,6 +13,18 @@
 		F36BF3F62553917800A12CCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F36BF3F42553917800A12CCC /* Main.storyboard */; };
 		F36BF3F82553917D00A12CCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36BF3F72553917D00A12CCC /* Assets.xcassets */; };
 		F36BF3FB2553917D00A12CCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F36BF3F92553917D00A12CCC /* LaunchScreen.storyboard */; };
+		F36BF411255393F100A12CCC /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BF410255393F100A12CCC /* MetalView.swift */; };
+		F36BF41D255393F700A12CCC /* boxBlurKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = F36BF413255393F700A12CCC /* boxBlurKernel.metal */; };
+		F36BF41E255393F700A12CCC /* grayscaleKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = F36BF414255393F700A12CCC /* grayscaleKernel.metal */; };
+		F36BF41F255393F700A12CCC /* rgba2bgraKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = F36BF415255393F700A12CCC /* rgba2bgraKernel.metal */; };
+		F36BF420255393F700A12CCC /* contrastKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = F36BF416255393F700A12CCC /* contrastKernel.metal */; };
+		F36BF421255393F700A12CCC /* brightnessKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = F36BF417255393F700A12CCC /* brightnessKernel.metal */; };
+		F36BF422255393F700A12CCC /* exposureKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = F36BF418255393F700A12CCC /* exposureKernel.metal */; };
+		F36BF423255393F700A12CCC /* passthroughKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = F36BF419255393F700A12CCC /* passthroughKernel.metal */; };
+		F36BF424255393F700A12CCC /* gammaKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = F36BF41A255393F700A12CCC /* gammaKernel.metal */; };
+		F36BF425255393F700A12CCC /* inversionKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = F36BF41B255393F700A12CCC /* inversionKernel.metal */; };
+		F36BF426255393F700A12CCC /* pixellateKernel.metal in Sources */ = {isa = PBXBuildFile; fileRef = F36BF41C255393F700A12CCC /* pixellateKernel.metal */; };
+		F36BF4292553940B00A12CCC /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36BF4282553940B00A12CCC /* VideoCapture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +36,18 @@
 		F36BF3F72553917D00A12CCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F36BF3FA2553917D00A12CCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F36BF3FC2553917D00A12CCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F36BF410255393F100A12CCC /* MetalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		F36BF413255393F700A12CCC /* boxBlurKernel.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = boxBlurKernel.metal; sourceTree = "<group>"; };
+		F36BF414255393F700A12CCC /* grayscaleKernel.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = grayscaleKernel.metal; sourceTree = "<group>"; };
+		F36BF415255393F700A12CCC /* rgba2bgraKernel.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = rgba2bgraKernel.metal; sourceTree = "<group>"; };
+		F36BF416255393F700A12CCC /* contrastKernel.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = contrastKernel.metal; sourceTree = "<group>"; };
+		F36BF417255393F700A12CCC /* brightnessKernel.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = brightnessKernel.metal; sourceTree = "<group>"; };
+		F36BF418255393F700A12CCC /* exposureKernel.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = exposureKernel.metal; sourceTree = "<group>"; };
+		F36BF419255393F700A12CCC /* passthroughKernel.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = passthroughKernel.metal; sourceTree = "<group>"; };
+		F36BF41A255393F700A12CCC /* gammaKernel.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = gammaKernel.metal; sourceTree = "<group>"; };
+		F36BF41B255393F700A12CCC /* inversionKernel.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = inversionKernel.metal; sourceTree = "<group>"; };
+		F36BF41C255393F700A12CCC /* pixellateKernel.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = pixellateKernel.metal; sourceTree = "<group>"; };
+		F36BF4282553940B00A12CCC /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,8 @@
 		F36BF3ED2553917800A12CCC /* MetalCamera */ = {
 			isa = PBXGroup;
 			children = (
+				F36BF4282553940B00A12CCC /* VideoCapture.swift */,
+				F36BF40E255393C800A12CCC /* Metal */,
 				F36BF3EE2553917800A12CCC /* AppDelegate.swift */,
 				F36BF3F02553917800A12CCC /* SceneDelegate.swift */,
 				F36BF3F22553917800A12CCC /* ViewController.swift */,
@@ -65,6 +91,32 @@
 				F36BF3FC2553917D00A12CCC /* Info.plist */,
 			);
 			path = MetalCamera;
+			sourceTree = "<group>";
+		};
+		F36BF40E255393C800A12CCC /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				F36BF410255393F100A12CCC /* MetalView.swift */,
+				F36BF40F255393DC00A12CCC /* Shader */,
+			);
+			path = Metal;
+			sourceTree = "<group>";
+		};
+		F36BF40F255393DC00A12CCC /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				F36BF413255393F700A12CCC /* boxBlurKernel.metal */,
+				F36BF417255393F700A12CCC /* brightnessKernel.metal */,
+				F36BF416255393F700A12CCC /* contrastKernel.metal */,
+				F36BF418255393F700A12CCC /* exposureKernel.metal */,
+				F36BF41A255393F700A12CCC /* gammaKernel.metal */,
+				F36BF414255393F700A12CCC /* grayscaleKernel.metal */,
+				F36BF41B255393F700A12CCC /* inversionKernel.metal */,
+				F36BF419255393F700A12CCC /* passthroughKernel.metal */,
+				F36BF41C255393F700A12CCC /* pixellateKernel.metal */,
+				F36BF415255393F700A12CCC /* rgba2bgraKernel.metal */,
+			);
+			path = Shader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +189,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36BF421255393F700A12CCC /* brightnessKernel.metal in Sources */,
+				F36BF4292553940B00A12CCC /* VideoCapture.swift in Sources */,
+				F36BF41F255393F700A12CCC /* rgba2bgraKernel.metal in Sources */,
+				F36BF411255393F100A12CCC /* MetalView.swift in Sources */,
+				F36BF422255393F700A12CCC /* exposureKernel.metal in Sources */,
+				F36BF41D255393F700A12CCC /* boxBlurKernel.metal in Sources */,
+				F36BF423255393F700A12CCC /* passthroughKernel.metal in Sources */,
+				F36BF41E255393F700A12CCC /* grayscaleKernel.metal in Sources */,
+				F36BF420255393F700A12CCC /* contrastKernel.metal in Sources */,
 				F36BF3F32553917800A12CCC /* ViewController.swift in Sources */,
 				F36BF3EF2553917800A12CCC /* AppDelegate.swift in Sources */,
+				F36BF424255393F700A12CCC /* gammaKernel.metal in Sources */,
+				F36BF426255393F700A12CCC /* pixellateKernel.metal in Sources */,
+				F36BF425255393F700A12CCC /* inversionKernel.metal in Sources */,
 				F36BF3F12553917800A12CCC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,7 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2YXT349JH6;
+				DEVELOPMENT_TEAM = H67322LE4M;
 				INFOPLIST_FILE = MetalCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,7 +370,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2YXT349JH6;
+				DEVELOPMENT_TEAM = H67322LE4M;
 				INFOPLIST_FILE = MetalCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
